@@ -1,0 +1,58 @@
+/* .projects {
+  width: 100vw;
+  background-color: #1a1536;
+  position: relative;
+  overflow-x: hidden;
+} */
+
+.projects-container {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Allow scrolling */
+html,
+body,
+#root {
+  height: auto;
+  overflow-y: auto;
+}
+
+/* The section that wraps the project type buttons and carousel */
+.projectsAndSkills {
+  min-height: 100vh; /* instead of fixed height */
+  width: 100%;
+  background-color: #0b0d22;
+  position: relative;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 1.5rem;
+}
+
+.button-container>h3 {
+  margin-top: 0;
+  color: #a8b2ff;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  border-color: #7285ff;
+  border-style: solid;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  text-align: center;
+}

@@ -1,0 +1,334 @@
+.page {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.home-bg {
+  background: radial-gradient(circle at top left, #0b0d22 0%, #171233 35%, #26102b 70%, #3a0e14 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* ---- Background image ---- */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Scales and crops to fill the screen */
+  opacity: 0.1;
+  z-index: 0;
+  pointer-events: none;
+  /* Keeps it non-interactive */
+}
+
+
+/* ---- Home text section ---- */
+.home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 7em;
+  padding-left: 5.4em;
+  width: 45%;
+  z-index: 2;
+  line-height: 0.9;
+}
+
+/* ---- Headings ---- */
+h1 {
+  font-size: 5em;
+}
+
+h2>span {
+  filter: drop-shadow(0 6px 6px rgba(208, 173, 240, 1));
+}
+
+h1>span {
+  color: rgba(208, 173, 240, 1);
+}
+
+/* ---- Quote section ---- */
+
+h3>span {
+  font-size: 0.8rem;
+}
+
+/* ---- Quote section ---- */
+.quote {
+  position: absolute;
+  bottom: 2rem;
+  right: 5.8rem;
+  text-align: right;
+  z-index: 1;
+  /* base stacking context */
+}
+
+.quote>h3 {
+  position: relative;
+  padding: 30px;
+  border: 2px solid #7285ff;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-size: 1.5rem;
+  color: white;
+  transform: translate(-24%);
+  z-index: 1;
+  /* text below image */
+}
+
+.bottom-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-30.5%, -90%);
+  /* adjust how it overlaps */
+  height: auto;
+  z-index: 2;
+  /* image above */
+  pointer-events: none;
+  /* so it doesn’t block mouse interactions */
+  width: 95%;
+}
+
+.abstract {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 150%;
+  width: auto;
+  opacity: 1;
+  z-index: 1;
+  pointer-events: none;
+  /* so it doesn’t block mouse interactions */
+  transform: translate(-65%, -150%);
+}
+
+
+
+/* ---- Optional ---- */
+/* a.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  border: 2px solid #7285ff;
+  color: #7285ff;
+  text-decoration: none;
+  transition: 0.3s;
+} */
+
+a.cta-button:hover {
+  background-color: #7285ff;
+  color: #0b0d22;
+}
+
+.social-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15vh;
+  right: 2rem;
+  gap: 2rem;
+  /* space between icons */
+}
+
+/* vertical line */
+.line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: white;
+  z-index: 0;
+  height: 60%;
+  /* adjust length of the line */
+}
+
+/* icon wrapper */
+.icon {
+  position: relative;
+  z-index: 1;
+  /* ensures icons sit ABOVE the line */
+  background-color: black;
+  /* covers the line behind */
+  padding: 8px;
+  border-radius: 50%;
+  /* makes the cover circular */
+}
+
+.icon img {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.icon img:hover {
+  filter: invert(40%) sepia(92%) saturate(2000%) hue-rotate(190deg);
+}
+
+/* ===== Responsive Styles ===== */
+
+/* ---------- For tablets (≤1024px) ---------- */
+@media (max-width: 1024px) {
+  .page {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+    padding: 100px 40px;
+  }
+
+  .home {
+    width: 100%;
+    padding-left: 2rem;
+    padding-top: 6rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .cta-button {
+    margin: 1.5rem auto;
+  }
+
+  .quote {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .quote > h3 {
+    transform: none;
+    font-size: 1.3rem;
+    padding: 20px;
+  }
+
+  .bottom-image {
+    position: relative;
+    transform: none;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .social-container {
+    position: relative;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    right: 0;
+  }
+
+  .line {
+    display: none;
+  }
+}
+
+/* ---------- For mobile phones (≤768px) ---------- */
+@media (max-width: 768px) {
+  html, body, #root {
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .home {
+    padding: 2.5rem 1.5rem 0.5rem;
+    text-align: left;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.6rem;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .quote {
+    text-align: left;
+    /* margin-top: 2.5rem; */
+  }
+
+  .quote > h3 {
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .bottom-image {
+    width: 100%;
+  }
+
+  .abstract {
+    display: none; /* hide background abstract on small screens */
+  }
+
+  .social-container {
+    flex-direction: row;
+    gap: 1rem;
+    margin: 2rem auto 0;
+  }
+
+  .icon img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* ---------- For very small screens (≤480px) ---------- */
+@media (max-width: 480px) {
+  .home {
+    padding: 4rem 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .quote > h3 {
+    font-size: 0.9rem;
+  }
+
+  .bottom-image {
+    width: 100%;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}

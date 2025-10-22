@@ -1,0 +1,135 @@
+.contact-page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(26, 21, 54, 0.2);
+    padding: 40px 20px;
+}
+
+.contact-form {
+    background: transparent;
+    padding: 40px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-page h2 {
+    margin-top: 0;
+    color: #a8b2ff;
+    width: 30%;
+    padding: 10px;
+    margin: 80px;
+    border-color: #7285ff;
+    border-style: solid;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    text-align: center;
+}
+
+/* --- Two-column row (Name + Email) --- */
+.form-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 220px;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #a8b2ff;
+    font-size: 0.95rem;
+}
+
+/* --- Inputs and textarea styling --- */
+input,
+textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #c7b3e5;
+    /* muted violet */
+    padding: 10px 4px;
+    font-size: 1rem;
+    color: #a8b2ff;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #a8b2ff;
+}
+
+input:focus,
+textarea:focus {
+    border-bottom-color: #8b6ec9;
+    /* slightly brighter violet */
+}
+
+/* --- Message field --- */
+textarea {
+    resize: none;
+    height: 120px;
+    width: 100%;
+}
+
+/* --- Submit button --- */
+button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 8px;
+    background: #8b6ec9;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.15s ease;
+}
+
+button:hover {
+    background: #7754bd;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+.Successful{
+    display: flex;
+    color: palegreen;
+}
+
+.contact-page img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+    z-index: -1; /* behind content */
+}
+
+.NotSuccessful{
+    display: none;
+}
+
+@media (max-width: 780px) {
+    .contact-page h2 {
+        width: 80%;
+    }
+}
+    
