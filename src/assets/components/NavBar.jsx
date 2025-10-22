@@ -21,7 +21,7 @@ export default function NavBar() {
         <nav className="navbar" ref={navRef}>
             <div className="navbar-brand">
                 <img
-                    src="./src/assets/images/Code_perspective_matte.png"
+                    src="https://tctvhz9naf0vr1sb.public.blob.vercel-storage.com/images/Code_perspective_matte.png"
                     className="logo-icon"
                     alt=""
                 />

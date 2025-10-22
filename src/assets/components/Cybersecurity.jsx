@@ -7,7 +7,7 @@ export default function Cybersecurity() {
             <div className="cyber-container">
 
                 <div className="project-card">
-                    <img src="./src/assets/images/SecurityTesting.png" alt="Network security" />
+                    <img src="https://tctvhz9naf0vr1sb.public.blob.vercel-storage.com/images/SecurityTesting.png" alt="Network security" />
                     <h3>Virtualized Lab</h3>
                     <p>Networking and Security testing in a Lab environment</p>
                     <div className="project-links">

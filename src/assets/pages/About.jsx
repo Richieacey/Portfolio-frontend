@@ -3,7 +3,7 @@ import '../css/About.css';
 function About() {
     return (
         <div className="about-page">
-            <img src="./src/assets/images/Mask group.png" className='about-background-image' alt="" />
+            <img src="https://tctvhz9naf0vr1sb.public.blob.vercel-storage.com/images/Mask%20group.png" className='about-background-image' alt="" />
             <section className='about-container'>
                 <h1 className='title'>About Me</h1>
                 <div>
@@ -25,7 +25,7 @@ function About() {
 
             </section>
             <section>
-                <img src="./src/assets/images/hero-image.png" className='hero-image' alt="" />
+                <img src="https://tctvhz9naf0vr1sb.public.blob.vercel-storage.com/images/hero-image.png" className='hero-image' alt="" />
             </section>
 
         </div>

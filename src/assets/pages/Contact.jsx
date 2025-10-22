@@ -40,7 +40,7 @@ function Contact(){
     }
     return (
     <div className="contact-page">
-      <img src="./src/assets/images/glasses.png" alt="" />
+      <img src="https://tctvhz9naf0vr1sb.public.blob.vercel-storage.com/images/glasses.png" alt="" />
       <h2>Contact Me</h2>
       <form className="contact-form" onSubmit={handleSubmit}>
 
