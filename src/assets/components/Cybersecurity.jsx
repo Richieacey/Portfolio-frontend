@@ -6,7 +6,7 @@ export default function Cybersecurity() {
             <h1 className="projects-title">My Reports</h1>
             <div className="cyber-container">
 
-                <div className="project-card">
+                <div className="project-card cyber">
                     <img src="https://tctvhz9naf0vr1sb.public.blob.vercel-storage.com/images/SecurityTesting.png" alt="Network security" />
                     <h3>Virtualized Lab</h3>
                     <p>Networking and Security testing in a Lab environment</p>
@@ -16,7 +16,7 @@ export default function Cybersecurity() {
                         </a>
                     </div>
                 </div>
-                <div className="project-card">
+                <div className="project-card cyber">
                     <img src="https://tctvhz9naf0vr1sb.public.blob.vercel-storage.com/images/Cisco.png" alt="Networking in Cisco" />
                     <h3>Network Simulation</h3>
                     <p>Network Simulation of VLANs in Cisco packet tracer</p>

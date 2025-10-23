@@ -130,4 +130,8 @@
   .cyber-container{
     flex-direction: column;
   }
+
+  .cyber{
+    width: 90%;
+  }
 }
