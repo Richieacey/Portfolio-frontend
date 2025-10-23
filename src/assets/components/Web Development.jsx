@@ -149,11 +149,11 @@ const projects = [
         live: "https://richieacey.github.io/Room-homepage/",
     },
     {
-        title: "Sneakers",
-        description: "Landing page of a clean e-commerce website",
-        image: "https://tctvhz9naf0vr1sb.public.blob.vercel-storage.com/images/Sneakers.png",
-        github: "https://github.com/Richieacey/ecommerce-product-page",
-        live: "https://richieacey.github.io/ecommerce-product-page/",
+        title: "MovieBase",
+        description: "A database of your favorite trending movies built with React and moviedb API",
+        image: "https://tctvhz9naf0vr1sb.public.blob.vercel-storage.com/images/MovieBase.png",
+        github: "https://github.com/Richieacey/MovieBase",
+        live: "https://movie-base-topaz.vercel.app/",
     },
 ];
 
