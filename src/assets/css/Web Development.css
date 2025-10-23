@@ -126,4 +126,8 @@
   .projects-title {
     font-size: 2rem;
   }
+
+  .cyber-container{
+    flex-direction: column;
+  }
 }
