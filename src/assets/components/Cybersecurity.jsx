@@ -17,7 +17,7 @@ export default function Cybersecurity() {
                     </div>
                 </div>
                 <div className="project-card">
-                    <img src="./src/assets/images/Cisco.png" alt="Networking in Cisco" />
+                    <img src="https://tctvhz9naf0vr1sb.public.blob.vercel-storage.com/images/Cisco.png" alt="Networking in Cisco" />
                     <h3>Network Simulation</h3>
                     <p>Network Simulation of VLANs in Cisco packet tracer</p>
                     <div className="project-links">

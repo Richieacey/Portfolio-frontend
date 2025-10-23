@@ -15,7 +15,7 @@ function Projects(){
                     <h3>Cybersecurity</h3>
                 </div>
                 <Cybersecurity/>
-                <Particle/>
+                {/* <Particle/> */}
 
             </section>
         </div>
