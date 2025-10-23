@@ -20,7 +20,7 @@ function Contact(){
     const handleSubmit=(e)=> {
         e.preventDefault();
         // const { name, email, course } = formData;
-        fetch("https://django-api-h2xj.onrender.com/api/contact", {
+        fetch("https://django-api-h2xj.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
