@@ -128,11 +128,11 @@ import "../css/Web Development.css";
 
 const projects = [
     {
-        title: "Bookmark",
-        description: "Landing page of a bookmark website",
-        image: "https://tctvhz9naf0vr1sb.public.blob.vercel-storage.com/images/Bookmark.png",
-        github: "https://github.com/Richieacey/bookmark-landing-page",
-        live: "https://richieacey.github.io/bookmark-landing-page/",
+        title: "Weather now",
+        description: "A website for getting live weather updates and forecasts from different places, built with React, Tailwind css, open mateo API, and ipinfo API",
+        image: "https://tctvhz9naf0vr1sb.public.blob.vercel-storage.com/images/weathernow.jpeg",
+        github: "https://github.com/Richieacey/weather-now",
+        live: "https://weather-now-web-app.vercel.app/",
     },
     {
         title: "Easybank",
