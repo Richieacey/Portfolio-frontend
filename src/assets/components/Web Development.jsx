@@ -26,7 +26,7 @@ const projects = [
         description: "Homepage of a furniture website",
         image: "https://tctvhz9naf0vr1sb.public.blob.vercel-storage.com/images/Room.png",
         github: "https://github.com/Richieacey/Room-homepage",
-        live: "https://richieacey.github.io/Room-homepage/",
+        live: "https://room-homepage-tan-psi.vercel.app/",
     },
     {
         title: "MovieBase",
