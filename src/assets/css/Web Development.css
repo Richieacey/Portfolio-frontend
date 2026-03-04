@@ -10,10 +10,14 @@
 }
 
 .projects-title {
-  color: #a8b2ff;
+  color: #d0adf0;
+  text-shadow: 0 0 10px rgba(208, 173, 240, 0.4);
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-align: center;
+}
+
+.animate-title {
   animation: fadeInUp 1s ease-in-out both;
 }
 
@@ -27,8 +31,11 @@
 
 /* Project card */
 .project-card {
-  background: #1a1536;
-  border-radius: 20px;
+  background: rgba(20, 15, 30, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
   text-align: center;
   padding: 1.5rem;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
@@ -62,30 +69,54 @@
 }
 
 .project-links a {
-  color: #7285ff;
+  background: rgba(114, 133, 255, 0.1);
+  color: #d0adf0;
   text-decoration: none;
-  border: 1px solid #7285ff;
+  border: 1px solid rgba(208, 173, 240, 0.5);
+  font-weight: bold;
   padding: 0.4rem 0.8rem;
   border-radius: 8px;
   transition: all 0.3s ease;
 }
 
 .project-links a:hover {
-  background: #7285ff;
-  color: #0b0d22;
+  background: linear-gradient(135deg, #7285ff 0%, #d0adf0 100%);
+  color: #000;
+  border-color: transparent;
+  box-shadow: 0 4px 15px rgba(208, 173, 240, 0.4);
 }
 
-.cyber-container{
-  display: flex;
-  flex-direction: row;
-  gap: 2.5rem;
-  z-index: 2;
+
+
+.swiper {
+  padding: 5rem 1rem !important;
+  /* Increased padding to prevent cut off from scale & shadow */
 }
 
-/* Center card enlargement */
+/* Fix clickability without breaking swiper drag */
+.swiper-slide {
+  z-index: 1 !important;
+}
+
+.swiper-slide-active {
+  z-index: 10 !important;
+}
+
+/* Hide links on inactive slides to prevent overlapping click hitboxes */
+.swiper-slide:not(.swiper-slide-active) .project-links {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.swiper-slide-active .project-links {
+  pointer-events: auto;
+  opacity: 1;
+}
+
 .swiper-slide-active .project-card {
-  transform: scale(1.1);
-  box-shadow: 0 10px 30px rgba(168, 178, 255, 0.4);
+  transform: scale(1.15);
+  box-shadow: 0 15px 40px rgba(168, 178, 255, 0.4);
 }
 
 /* Fade-in animation */
@@ -94,6 +125,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -127,11 +159,5 @@
     font-size: 2rem;
   }
 
-  .cyber-container{
-    flex-direction: column;
-  }
 
-  .cyber{
-    width: 90%;
-  }
 }

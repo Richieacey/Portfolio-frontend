@@ -25,7 +25,7 @@
   display: flex;
   font-size: 1.5rem;
   align-items: center;
-  color: #1a1a2e;
+  color: #a8b2ff;
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
 }
@@ -174,7 +174,7 @@
   }
 
   .nav-link {
-    
+
     font-size: 1.2rem;
     text-align: right;
   }

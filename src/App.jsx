@@ -4,6 +4,7 @@ import Home from './assets/pages/Home'
 import About from './assets/pages/About'
 import Projects from './assets/pages/Projects'
 import Contact from './assets/pages/Contact'
+import Bootcamp from './assets/pages/Bootcamp'
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 
@@ -15,10 +16,11 @@ export default function App() {
       <CursorLight />
       <main className='main-content'>
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/about' element={<About/>}/>
-          <Route path='/projects' element={<Projects/>}/>
-          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/bootcamp' element={<Bootcamp />} />
         </Routes>
       </main>
     </>

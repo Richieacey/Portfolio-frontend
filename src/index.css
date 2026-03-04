@@ -13,12 +13,18 @@
   box-sizing: border-box;
 }
 
-html, body, #root {
-  min-height: 100vh;      /* ensures full viewport height */
+html,
+body,
+#root {
+  min-height: 100vh;
+  /* ensures full viewport height */
   width: 100%;
   margin: 0;
   padding: 0;
-  overflow: hidden;     /* hides horizontal scroll, allows vertical if needed */
+  overflow-x: hidden;
+  /* hides horizontal scroll */
+  overflow-y: auto;
+  /* allows vertical scrolling if needed */
 }
 
 
@@ -55,9 +61,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

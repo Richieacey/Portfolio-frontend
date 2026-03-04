@@ -43,6 +43,7 @@ export default function NavBar() {
                 <Link to="/" className="nav-link" onClick={() => setIsOpen(false)}>Home</Link>
                 <Link to="/about" className="nav-link" onClick={() => setIsOpen(false)}>About</Link>
                 <Link to="/projects" className="nav-link" onClick={() => setIsOpen(false)}>Projects</Link>
+                <Link to="/bootcamp" className="nav-link" onClick={() => setIsOpen(false)}>Bootcamp</Link>
                 <Link to="/contact" className="nav-link" onClick={() => setIsOpen(false)}>Contact</Link>
             </div>
         </nav>

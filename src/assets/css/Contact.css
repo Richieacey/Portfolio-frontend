@@ -87,27 +87,28 @@ textarea {
 button {
     display: block;
     margin: 30px auto 0;
-    padding: 12px 40px;
+    padding: 1rem 40px;
     border: none;
     border-radius: 8px;
-    background: #8b6ec9;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 600;
+    background: linear-gradient(135deg, #7285ff 0%, #d0adf0 100%);
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.15s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
-    background: #7754bd;
     transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(208, 173, 240, 0.4);
+    border-color: transparent;
 }
 
 button:active {
     transform: translateY(0);
 }
 
-.Successful{
+.Successful {
     display: flex;
     color: palegreen;
 }
@@ -120,10 +121,11 @@ button:active {
     height: 100%;
     object-fit: cover;
     opacity: 0.1;
-    z-index: -1; /* behind content */
+    z-index: -1;
+    /* behind content */
 }
 
-.NotSuccessful{
+.NotSuccessful {
     display: none;
 }
 
@@ -132,4 +134,3 @@ button:active {
         width: 80%;
     }
 }
-    

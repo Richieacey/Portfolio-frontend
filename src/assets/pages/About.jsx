@@ -6,26 +6,24 @@ function About() {
             <img src="https://tctvhz9naf0vr1sb.public.blob.vercel-storage.com/images/Mask%20group.png" className='about-background-image' alt="" />
             <section className='about-container'>
                 <h1 className='title'>About Me</h1>
-                <div>
-                    <p className='paragraph-style'>&lt;p&gt;</p>
-                    <p className="bio-description">
-                        I'm <span>Richard Uwumwonse</span>, a passionate web developer focused on building clean,
-                        responsive, and dynamic web applications using <span>HTML, CSS, JavaScript, and React, Django, etc.</span>
-
-                        I take pride in writing efficient and maintainable code while constantly exploring
-                        new ways to improve my craft. I&apos;m driven by curiosity and the desire to keep learning, there&apos;s
-                        always something new to master in tech.
-
-                        When I&apos;m not coding, you&apos;ll probably find me sketching, reading something thought-provoking,
-                        or experimenting with tech-driven side projects. I enjoy exploring new perspectives that challenge
-                        how I think and help me grow both as a developer and as a person.
-                    </p>
-                    <p className='paragraph-style'>&lt;/p&gt;</p>
+                <div className="about-text-content">
+                    <div className="text-section">
+                        <p className='paragraph-style'>&lt;p&gt;</p>
+                        <p className="bio-description">
+                            I'm <span>Richard Uwumwonse</span>, a developer and <span>cybersecurity specialist</span> passionate about <span>offensive security</span> and secure software engineering, with five years of experience in <span>Python programming</span>.
+                            <br /><br />
+                            With a strong foundation in <span>full-stack web development</span>, I enjoy building everything from dynamic user interfaces to automated <span>OSINT</span> and <span>penetration testing tools</span>.
+                            I'm driven by curiosity, whether that's mastering a new JavaScript framework or understanding the mechanics of a security vulnerability. I take pride in writing efficient code.
+                            <br /><br />
+                            Outside of tech, I enjoy sketching, reading, and exploring new perspectives that push my boundaries as both a developer and a person.
+                        </p>
+                        <p className='paragraph-style'>&lt;/p&gt;</p>
+                    </div>
+                    <div className="image-section">
+                        <img src="https://tctvhz9naf0vr1sb.public.blob.vercel-storage.com/images/hero-image.png" className='hero-image' alt="Richard Uwumwonse" />
+                    </div>
                 </div>
 
-            </section>
-            <section>
-                <img src="https://tctvhz9naf0vr1sb.public.blob.vercel-storage.com/images/hero-image.png" className='hero-image' alt="" />
             </section>
 
         </div>

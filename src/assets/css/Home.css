@@ -9,10 +9,11 @@
 }
 
 .home-bg {
-  background: radial-gradient(circle at top left, #0b0d22 0%, #171233 35%, #26102b 70%, #3a0e14 100%);
+  background: radial-gradient(circle at top left, rgba(11, 13, 34, 0.85) 0%, rgba(23, 18, 51, 0.88) 35%, rgba(38, 16, 43, 0.92) 70%, rgba(58, 14, 20, 0.95) 100%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: 2;
 }
 
 
@@ -63,54 +64,42 @@ h3>span {
   font-size: 0.8rem;
 }
 
-/* ---- Quote section ---- */
-.quote {
+/* ---- Hero Graphics section ---- */
+.hero-graphics {
   position: absolute;
-  bottom: 2rem;
-  right: 5.8rem;
-  text-align: right;
+  bottom: 0;
+  right: 0;
+  width: 50vw;
+  height: 100%;
   z-index: 1;
-  /* base stacking context */
-}
-
-.quote>h3 {
-  position: relative;
-  padding: 30px;
-  border: 2px solid #7285ff;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  font-size: 1.5rem;
-  color: white;
-  transform: translate(-24%);
-  z-index: 1;
-  /* text below image */
+  pointer-events: none;
 }
 
 .bottom-image {
   position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(-30.5%, -90%);
-  /* adjust how it overlaps */
-  height: auto;
+  bottom: 0;
+  right: 5vw;
+  height: 85vh;
+  /* Reduced from 95vh so it doesn't get hidden behind the header */
+  width: auto;
+  max-width: 50vw;
+  /* Reduced from 55vw proportionally */
+  object-fit: contain;
+  object-position: bottom right;
   z-index: 2;
-  /* image above */
-  pointer-events: none;
-  /* so it doesn’t block mouse interactions */
-  width: 95%;
 }
 
 .abstract {
   position: absolute;
-  top: 0;
-  right: 0;
-  height: 150%;
+  top: 50%;
+  right: 20vw;
+  /* Peeking out from the left behind the hero image */
+  height: 75vh;
+  /* Slightly smaller to fit layout perfectly */
   width: auto;
-  opacity: 1;
+  opacity: 0.5;
   z-index: 1;
-  pointer-events: none;
-  /* so it doesn’t block mouse interactions */
-  transform: translate(-65%, -150%);
+  transform: translateY(-50%);
 }
 
 
@@ -147,7 +136,7 @@ a.cta-button:hover {
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 2px;
+  width: 1px;
   background-color: white;
   z-index: 0;
   height: 60%;
@@ -159,11 +148,6 @@ a.cta-button:hover {
   position: relative;
   z-index: 1;
   /* ensures icons sit ABOVE the line */
-  background-color: black;
-  /* covers the line behind */
-  padding: 8px;
-  border-radius: 50%;
-  /* makes the cover circular */
 }
 
 .icon img {
@@ -213,24 +197,21 @@ a.cta-button:hover {
     margin: 1.5rem auto;
   }
 
-  .quote {
+  .hero-graphics {
     position: relative;
-    bottom: 0;
-    right: 0;
-    text-align: center;
+    width: 100%;
+    height: auto;
     margin-top: 2rem;
-  }
-
-  .quote > h3 {
-    transform: none;
-    font-size: 1.3rem;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
   }
 
   .bottom-image {
     position: relative;
-    transform: none;
-    width: 80%;
+    height: auto;
+    width: 85%;
+    max-width: none;
+    right: 0;
     margin: 0 auto;
     display: block;
   }
@@ -250,7 +231,10 @@ a.cta-button:hover {
 
 /* ---------- For mobile phones (≤768px) ---------- */
 @media (max-width: 768px) {
-  html, body, #root {
+
+  html,
+  body,
+  #root {
     height: auto;
     overflow-y: auto;
   }
@@ -275,14 +259,8 @@ a.cta-button:hover {
     width: 100%;
   }
 
-  .quote {
-    text-align: left;
-    /* margin-top: 2.5rem; */
-  }
-
-  .quote > h3 {
-    font-size: 1rem;
-    padding: 15px;
+  .hero-graphics {
+    margin-top: 1rem;
   }
 
   .bottom-image {
@@ -290,7 +268,8 @@ a.cta-button:hover {
   }
 
   .abstract {
-    display: none; /* hide background abstract on small screens */
+    display: none;
+    /* hide background abstract on small screens */
   }
 
   .social-container {
@@ -317,10 +296,6 @@ a.cta-button:hover {
 
   h2 {
     font-size: 1.4rem;
-  }
-
-  .quote > h3 {
-    font-size: 0.9rem;
   }
 
   .bottom-image {
