@@ -59,7 +59,7 @@ export default function Cybersecurity() {
     }, []);
 
     return (
-        <>
+        <div className="projects-page">
             <h1
                 ref={titleRef}
                 className={`projects-title ${isVisible ? "animate-title" : ""}`}
@@ -100,7 +100,7 @@ export default function Cybersecurity() {
                 >
                     {reports.map((report, index) => (
                         <SwiperSlide key={index}>
-                            <div className="project-card cyber">
+                            <div className="project-card">
                                 <img src={report.image} alt={report.title} />
                                 <h3>{report.title}</h3>
                                 <p>{report.description}</p>
@@ -114,6 +114,6 @@ export default function Cybersecurity() {
                     ))}
                 </Swiper>
             </div>
-        </>
+        </div>
     );
 }

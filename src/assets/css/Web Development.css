@@ -140,6 +140,11 @@
     padding: 0;
   }
 
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+
   .project-card {
     width: 40%;
     margin: 0 auto;
