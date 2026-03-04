@@ -16,14 +16,14 @@ const projects = [
     },
     {
         title: "Easybank",
-        description: "Landing page of bank website",
+        description: "Simple bank website",
         image: "https://tctvhz9naf0vr1sb.public.blob.vercel-storage.com/images/easybank.png",
         github: "https://github.com/Richieacey/Easybank-landing-page",
-        live: "https://richieacey.github.io/Easybank-landing-page/",
+        live: "https://easybank-landing-page-plum-three.vercel.app/",
     },
     {
         title: "Room",
-        description: "Homepage of a furniture website",
+        description: "Furniture company website",
         image: "https://tctvhz9naf0vr1sb.public.blob.vercel-storage.com/images/Room.png",
         github: "https://github.com/Richieacey/Room-homepage",
         live: "https://room-homepage-tan-psi.vercel.app/",
