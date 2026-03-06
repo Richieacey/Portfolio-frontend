@@ -10,12 +10,13 @@ function About() {
                     <div className="text-section">
                         <p className='paragraph-style'>&lt;p&gt;</p>
                         <p className="bio-description">
-                            I'm <span>Richard Uwumwonse</span>, a developer and <span>cybersecurity specialist</span> passionate about <span>offensive security</span> and secure software engineering, with five years of experience in <span>Python programming</span>.
+                            I’m <span>Richard Uwumwonse</span> a developer and <span>cybersecurity specialist</span> with a deep fascination for <span>offensive security</span> and building software that refuses to break. With five years of <span>Python</span> under my belt, I don’t just write code; I engineer solutions that are fast, secure, and purpose driven.
                             <br /><br />
-                            With a strong foundation in <span>full-stack web development</span>, I enjoy building everything from dynamic user interfaces to automated <span>OSINT</span> and <span>penetration testing tools</span>.
-                            I'm driven by curiosity, whether that's mastering a new JavaScript framework or understanding the mechanics of a security vulnerability. I take pride in writing efficient code.
+                            My playground spans <span>full-stack development</span> and <span>cybersecurity tooling</span> from crafting sleek, dynamic user interfaces to building automated <span>OSINT</span> and <span>penetration-testing tools</span> that uncover what others miss. Curiosity fuels everything I do. One day I’m diving into the intricacies of a new JavaScript framework, the next I’m dissecting the anatomy of a security vulnerability just to understand how it ticks.
                             <br /><br />
-                            Outside of tech, I enjoy sketching, reading, and exploring new perspectives that push my boundaries as both a developer and a person.
+                            Clean, efficient code is my standard not an afterthought.
+                            <br /><br />
+                            When I’m not deep in code or security research, you’ll probably find me sketching, reading, or chasing new ideas and perspectives that stretch both my creativity and my thinking as a developer and as a person.
                         </p>
                         <p className='paragraph-style'>&lt;/p&gt;</p>
                     </div>
